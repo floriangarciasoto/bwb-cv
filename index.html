@@ -5,36 +5,419 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV Florian Garcia Soto</title>
 
-  <!-- ==========================
-       Feuilles de style
-  ========================== -->
   <!-- Tailwind CSS -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <!-- CSS principal -->
+  <!-- CSS perso -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="grid grid-cols-12 min-h-screen">
+  <div class="grid grid-cols-12 min-h-screen">
   <!-- Bandeau gauche -->
-  <aside class="col-span-4 bg-gray-800 text-white p-6">
-    <h2 class="text-xl font-bold mb-4">Bandeau</h2>
-    <p>Photo, infos de contact, compétences…</p>
+  <aside class="col-span-4 bg-blue-800 text-white p-6 bg-gradient-to-br from-[#01B6FF] to-[#0000FF]">
+
+    <!-- Liens -->
+    <div id="links" class="px-2">
+      <div class="m-2 flex">
+        <img src="img/links/phone-svgrepo-com.svg" alt="Téléphone" class="w-8 h-8">
+        <a href=".">06 13 32 27 36</a>
+      </div>
+      <div class="m-2 flex">
+        <img src="img/links/mail-svgrepo-com.svg" alt="Mail" class="w-8 h-8">
+        <a href=".">floriangarciasoto@outlook.fr</a>
+      </div>
+      <div class="m-2 flex">
+        <img src="img/links/linkedin-svgrepo-com.svg" alt="LinkedIn" class="w-8 h-8">
+        <a href=".">/florian-garcia-soto</a>
+      </div>
+      <div class="m-2 flex">
+        <img src="img/links/portfolio-suitcase-svgrepo-com.svg" alt="Portfolio" class="w-8 h-8">
+        <a href=".">floriangarciasoto.ddns.net</a>
+      </div>
+      <div class="m-2 flex">
+        <img src="img/links/github-142-svgrepo-com.svg" alt="GitHub" class="w-8 h-8">
+        <a href=".">/floriangarciasoto</a>
+      </div>
+    </div>
+  
+    <!-- Infos personnelles -->
+    <div id="infos">
+      <div class="m-2 flex">
+        <img src="img/infos/birthday.svg" alt="Âge" class="w-8 h-8">
+        <p>25 ans - 25/09/1998</p>
+      </div>
+      <div class="m-2 flex">
+        <img src="img/infos/localisation.svg" alt="Localisation" class="w-8 h-8">
+        <p>Béziers - 34500</p>
+      </div>
+      <div class="m-2 flex">
+        <img src="img/infos/car.svg" alt="Permis" class="w-8 h-8">
+        <p>Permis B</p>
+      </div>
+      <div class="m-2 flex">
+        <img src="img/infos/hat.svg" alt="BAC" class="w-8 h-8">
+        <p>BAC S - Anglais B1</p>
+      </div>
+    </div>
+
+    <!-- Compétences -->
+    <section id="skills">
+      <h3>Compétences</h3>
+      <div class="grid grid-cols-3 gap-4">
+
+        <div class="m-2">
+          <img src="img/skills/server-minimalistic-svgrepo-com.svg" alt="" class="w-16 h-16">
+          <p>Réseau IT</p>
+        </div>
+        <div class="m-2">
+          <img src="img/skills/linux.svg" alt="Linux" class="w-16 h-16">
+          <p>Linux</p>
+        </div>
+        <div class="m-2">
+          <img src="img/skills/python-127-svgrepo-com.svg" alt="Python" class="w-16 h-16">
+          <p>Python</p>
+        </div>
+
+        <div class="m-2">
+          <img src="img/skills/React-icon.svg" alt="React" class="w-16 h-16">
+          <p>React</p>
+        </div>
+        <div class="m-2">
+          <img src="img/skills/php-elephant-svgrepo-com.svg" alt="PHP" class="w-16 h-16">
+          <p>PHP</p>
+        </div>
+        <div class="m-2">
+          <img src="img/skills/sql-database-generic-svgrepo-com-white.svg" alt="SQL" class="w-16 h-16">
+          <p>SQL</p>
+        </div>
+
+        <div class="m-2">
+          <img src="img/skills/vscode-fill-svgrepo-com.svg" alt="VS Code" class="w-16 h-16">
+          <p>VS Code</p>
+        </div>
+        <div class="m-2">
+          <img src="img/skills/html5-svgrepo-com.svg" alt="HTML/CSS" class="w-16 h-16">
+          <p>HTML/CSS</p>
+        </div>
+        <div class="m-2">
+          <img src="img/skills/javascript-155-svgrepo-com.svg" alt="JavaScript" class="w-16 h-16">
+          <p>JavaScript</p>
+        </div>
+
+        <div class="m-2">
+          <img src="img/skills/c-language-7521392-7196965.svg" alt="C" class="w-16 h-16">
+          <p>C</p>
+        </div>
+        <div class="m-2">
+          <img src="img/skills/brand-microsoft-office-svgrepo-com.svg" alt="Office" class="w-16 h-16">
+          <p>Office</p>
+        </div>
+        <div class="m-2">
+          <img src="img/skills/adobe.svg" alt="Adobe" class="w-16 h-16">
+          <p>Adobe</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Savoir-être -->
+    <section>
+      <h3>Savoir-être</h3>
+      <ul class="list-disc list-inside">
+        <li>Esprit d'équipe</li>
+        <li>Culture de l'apprentissage</li>
+        <li>Attention au détail</li>
+        <li>Créativité</li>
+        <li>Esprit d'analyse</li>
+        <li>Communication</li>
+      </ul>
+    </section>
+
+    <!-- Centres d'intérêt -->
+    <section>
+      <ul class="list-disc list-inside">
+        <li>
+          <h5>Modding</h5>
+          <p>
+            Personnalisation de jeux vidéo par 
+            modification de fichiers avec 
+            logiciels spécialisés
+          </p>
+        </li>
+      
+        <li>
+          <h5>Aéronautique</h5>
+          <p>
+            Voyage pédagogique Aéroport Cap 
+            d'Agde gagné en faisant partie des 
+            trois premiers de la classe
+          </p>
+        </li>
+
+        <li>
+          <h5>Audiovisuel</h5>
+          <p>
+            Vidéos humoristiques à base de 
+            parodies, plus de 400 000 vues sur 
+            YouTube
+          </p>
+        </li>
+      </ul>
+    </section>
+
   </aside>
 
   <!-- Contenu principal -->
   <main class="col-span-8 bg-white p-8">
-    <h1 class="text-3xl font-bold mb-6">Nom Prénom</h1>
+    
+    <h1 class="text-3xl font-bold mb-6">Florian GARCIA SOTO</h1>
+    <h6>“You don't have to be great to start, but you have to start to be great.” – Zig Ziglar</h6>
+    
+    <p>
+      Motivé  à  créer  des solutions innovantes pour améliorer l’expérience utilisateur,  je 
+      souhaite intégrer une équipe dynamique afin de contribuer à des projets concrets tout 
+      en développant mes compétences techniques.  Je suis ouvert aux dispositifs PMSMP 
+      et POEI pour faciliter mon intégration.
+    </p>
+
+    <!-- Formations -->
     <section class="mb-6">
-      <h2 class="text-xl font-semibold">Expériences</h2>
-      <p>Liste des expériences…</p>
-    </section>
-    <section>
       <h2 class="text-xl font-semibold">Formations</h2>
-      <p>Liste des formations…</p>
+
+      <table>
+        <tr>
+          <td>
+            <p>Février – Mai 2024</p>
+            <p>3W Academy</p>
+            <p>Téléprésentiel</p>
+          </td>
+          <td>
+            <p>Formation Full Stack Developer</p>
+            <p>Spécialisation React/Angular et Node JS/Symfony</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>2020 – 2021</p>
+            <p>IUT de Béziers</p>
+            <p>Béziers, France</p>
+          </td>
+          <td>
+            <p>LP Internet des objets</p>
+            <p>BAC +3</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>2018 – 2020</p>
+            <p>IUT de Béziers</p>
+            <p>Béziers, France</p>
+          </td>
+          <td>
+            <p>DUT Réseaux et Télécommunications</p>
+            <p>BAC +2</p>
+          </td>
+        </tr>
+      </table>
     </section>
+
+    <!-- Projets -->
+    <section>
+      <h2 class="text-xl font-semibold">Projets</h2>
+      <ul class="list-disc list-inside">
+
+        <li>
+          <div>
+            <div class="flex">
+              <div class="project-name-container">
+                <p>Mon portfolio <span>(seul)</span></p>
+                <div class="flex">
+                  <img src="img/projects/link.svg" alt="Lien" class="w-8 h-8">
+                  <img src="img/projects/github.svg" alt="GitHub" class="w-8 h-8">
+                </div>
+              </div>
+              <div class="flex">
+                <img src="img/projects/react.svg" alt="React" class="w-8 h-8">
+                <img src="img/projects/js.svg" alt="JavaScript" class="w-8 h-8">
+                <img src="img/projects/html5.svg" alt="HTML5" class="w-8 h-8">
+                <img src="img/projects/css3.svg" alt="CSS3" class="w-8 h-8">
+              </div>
+            </div>
+            <p>Depuis 2024</p>
+            <ul class="list-disc list-inside">
+              <li><span>Gestion :</span> respect des principes SOLID + mise en prod via repo Git</li>
+              <li><span>Com :</span> suivi de l’avancement du projet via publications LinkedIn</li>
+              <li>Démonstration des compétences acquises en formation</li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <div class="flex">
+              <div class="project-name-container">
+                <p>Site pour jeu de rôle en ligne <span>(seul)</span></p>
+                <div class="flex">
+                  <img src="img/projects/link.svg" alt="Lien" class="w-8 h-8">
+                  <img src="img/projects/github.svg" alt="GitHub" class="w-8 h-8">
+                </div>
+              </div>
+              <div class="flex">
+                <img src="img/projects/js.svg" alt="JavaScript" class="w-8 h-8">
+                <img src="img/projects/php-elephant-svgrepo-com-color.svg" alt="PHP" class="w-8 h-8">
+                <img src="img/projects/sql-database-generic-svgrepo-com.svg" alt="SQL" class="w-8 h-8">
+                <img src="img/projects/tux-svgrepo-com-color.svg" alt="Linux" class="w-8 h-8">
+              </div>
+            </div>
+            <p>Depuis 2018</p>
+            <ul class="list-disc list-inside">
+              <li><span>Stack :</span> gestion totale du hardware jusqu’au code</li>
+              <li><span>BDD :</span> gestion de contenu et droits d’accès par comptes</li>
+              <li><span>Technos :</span> API Ntfy pour notifications PUSH, jQuery UI Drag & Drop</li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <div class="flex">
+              <div class="project-name-container">
+                <p>Logiciel d’analyse de trafic réseau à but éducatif <span>(en groupe)</span></p>
+                <div class="flex">
+                  <img src="img/projects/github.svg" alt="GitHub" class="w-8 h-8">
+                </div>
+              </div>
+              <div class="flex">
+                <img src="img/projects/python.svg" alt="Python" class="w-8 h-8">
+              </div>
+            </div>
+            <p>2019 – 2020, IUT de Béziers</p>
+            <ul class="list-disc list-inside">
+              <li>Implémentation de la librairie Wireshark pour Python</li>
+              <li><span>Documentation :</span> code commenté à but collaboratif</li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <div class="flex">
+              <div class="project-name-container">
+                <p>Pistage des avions de ligne <span>(en groupe)</span></p>
+                <div class="flex">
+                  <img src="img/projects/link.svg" alt="Lien" class="w-8 h-8">
+                  <img src="img/projects/github.svg" alt="GitHub" class="w-8 h-8">
+                </div>
+              </div>
+              <div class="flex">
+                <img src="img/projects/tux-svgrepo-com-color.svg" alt="Linux" class="w-8 h-8">
+                <img src="img/projects/php-elephant-svgrepo-com-color.svg" alt="PHP" class="w-8 h-8">
+                <img src="img/projects/sql-database-generic-svgrepo-com.svg" alt="SQL" class="w-8 h-8">
+                <img src="img/projects/js.svg" alt="JavaScript" class="w-8 h-8">
+                <img src="img/projects/html5.svg" alt="HTML5" class="w-8 h-8">
+                <img src="img/projects/css3.svg" alt="CSS3" class="w-8 h-8">
+              </div>
+            </div>
+            <p>2018 – 2019, IUT de Béziers</p>
+            <ul class="list-disc list-inside">
+              <li><span>Back :</span> envoi des données du capteur vers BDD en temps réel</li>
+              <li><span>Front :</span> XMLHttpRequest et Leaflet pour infos sur carte dynamique</li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <div class="flex">
+              <div class="project-name-container">
+                <p>Pilotage d’un robot Delta 2D <span>(en groupe)</span></p>
+                <div class="flex">
+                  <img src="img/projects/link.svg" alt="Lien" class="w-8 h-8">
+                  <img src="img/projects/github.svg" alt="GitHub" class="w-8 h-8">
+                </div>
+              </div>
+              <div class="flex">
+                <img src="img/projects/c.svg" alt="C" class="w-8 h-8">
+              </div>
+            </div>
+            <p>2017 – 2018, Lycée Jean Moulin</p>
+            <ul class="list-disc list-inside">
+              <li>Codage bas niveau avec contraintes de système embarqué</li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <div class="flex">
+              <div class="project-name-container">
+                <p>Gestionnaire de stats de persos pour jeu de rôle <span>(seul)</span></p>
+                <div class="flex">
+                  <img src="img/projects/link.svg" alt="Lien" class="w-8 h-8">
+                  <img src="img/projects/github.svg" alt="GitHub" class="w-8 h-8">
+                </div>
+              </div>
+              <div class="flex">
+                <img src="img/projects/windows.svg" alt="Windows" class="w-8 h-8">
+              </div>
+            </div>
+            <p>2015 – 2018</p>
+            <ul class="list-disc list-inside">
+              <li>Script de commandes Windows de plus de 2000 lignes</li>
+              <li>Première expérience avec le monde de la programmation</li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- Expériences professionnelles -->
+    <section>
+      <h2 class="text-xl font-semibold">Expériences professionnelles</h2>
+
+      <table>
+        <tr>
+          <td>
+            <p>Février – Mai 2024</p>
+            <p>3W Academy</p>
+            <p>Téléprésentiel</p>
+          </td>
+          <td>
+            <p>Formation Full Stack Developer</p>
+            <p>Spécialisation React/Angular et Node JS/Symfony</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>2020 – 2021</p>
+            <p>IUT de Béziers</p>
+            <p>Béziers, France</p>
+          </td>
+          <td>
+            <p>LP Internet des objets</p>
+            <p>BAC +3</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <p>2018 – 2020</p>
+            <p>IUT de Béziers</p>
+            <p>Béziers, France</p>
+          </td>
+          <td>
+            <p>DUT Réseaux et Télécommunications</p>
+            <p>BAC +2</p>
+          </td>
+        </tr>
+      </table>
+    </section>
+
   </main>
 </div>
-
 </body>
 </html>
